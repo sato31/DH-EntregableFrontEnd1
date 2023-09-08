@@ -1,0 +1,296 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    /* font-family: 'Quicksand', sans-serif; */
+    font-family: 'Be Vietnam Pro', sans-serif;
+    box-sizing: border-box;
+}
+
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    max-width: 80vw;
+    margin: 15px 10vw;
+}
+
+.logo-header{
+    width: 35%;
+}
+
+.hamburger{
+    height: 20px; 
+    width: 25px;
+}
+
+.container-padel{
+    display: flex;
+    justify-content: center;
+}
+
+.padel{
+    height: 90%;
+    width: 80%;
+}
+
+.main-info{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 8vw;
+    justify-content: end;
+}
+
+.prime-news{
+    text-align: right;
+    font-size: 3em;
+    font-weight: 900;
+    margin-top: 3vh;
+    margin-bottom: 1vh;
+}
+
+.description-news{
+    text-align: right;
+    font-size: 1em;
+    font-weight: 500;
+    margin: 1vh 0;
+}
+
+.button-contact{
+    background-color: #8B48BF;
+    height: 40px;
+    width: 32%;
+    border-radius: 30px;
+    border: none;
+    color: #ffffff;
+    font-size: 0.8em;
+    margin-top: 10px;
+}
+
+.container-pros{
+    background-color: #3CDDF3;
+    color: #ffffff;
+    padding: 10% 0%;
+}
+
+.pros{
+    font-size: 2.1em;
+    margin: 0 10vw 10% 5vw;
+    text-align: left;
+}
+
+.description-pros{
+    text-align: left;
+    font-size: 1em;
+    font-weight: 500;
+    margin: 0 10vw 0% 5vw;
+}
+
+.container-tips{
+    display: flex;
+    flex-direction: column;
+    margin: 10vh 0 5vh 8vw;
+}
+
+.header-tip{
+    display: flex;
+    flex-direction: row;
+    position: relative;
+}
+
+.number-tip{
+    text-align: center;
+    font-size: 1em;
+    font-weight: 700;
+    background-color: #8B48BF;
+    color: #ffffff;
+    width: 16%;
+    height: 100%;
+    border-radius: 20px;
+    padding: 2% 0;
+    position: absolute;
+}
+
+.name-tip{
+    background-color: rgba(139, 72, 191, 0.3);
+    text-align: left;
+    font-size: 1em;
+    font-weight: 700;
+    color: #000000;
+    padding: 2% 0 2% 10%;
+    margin-left: 10vw;
+    width: 100%;
+}
+
+.description-tip {
+    margin: 5vh 3vw;
+    font-weight: 500;
+    color: rgba(179, 178, 183, 1);
+}
+
+.best{
+    font-size: 2.1em;
+    font-weight: 700;
+    text-align: center;
+}
+
+.container-cards{
+    background-color: rgba(250, 250, 250, 1);
+    margin: 0 4vw;  
+}
+
+.card{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    margin-top: 15vh;
+}
+
+.img-player{
+    height: 70px;
+    width: 70px;
+    position: absolute;
+    bottom: 82.5%;
+}
+
+.name-player{
+    font-size: 1em;
+    font-weight: 700;
+    color: #000000;
+    margin-top: 8vh;
+}
+
+.description-player{
+    margin: 2vh 5vw 4vh;
+    font-weight: 500;
+    color: rgba(179, 178, 183, 1);
+    text-align: center;
+}
+
+.container-button{
+    display: flex;
+    justify-content: center;
+    margin: 5vh 0;
+}
+
+.button-more{
+    background-color: #8B48BF;
+    height: 40px;
+    width: 28%;
+    border-radius: 30px;
+    border: none;
+    color: #ffffff;
+    font-size: 0.8em;
+    margin-top: 10px;
+}
+
+.container-teams{
+    background-color: #3CDDF3;
+    padding: 10% 15% 1% 15%;
+}
+
+.best-teams{
+    font-size: 2.2em;
+    font-weight: 700;
+    color: #ffffff;
+    text-align: center;
+}
+
+.button-go-for{
+    background-color: rgba(35, 44, 80, 1);
+    height: 40px;
+    width: 38%;
+    border-radius: 30px;
+    border: none;
+    box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.25);
+    color: #ffffff;
+    font-size: 0.8em;
+}
+
+footer{
+    background-color: rgba(30, 30, 38, 1);
+    padding: 10%;   
+}
+
+.email-form{
+    text-align: center;
+    width: 100%;
+}
+
+.email{
+    height: 40px;
+    width: 80%;
+    border-radius: 30px;
+    border: none;
+    padding-left: 3vw;
+}
+
+.button-go{
+    background-color: #8B48BF;
+    height: 40px;
+    width: 17.5%;
+    border-radius: 30px;
+    border: none;
+    color: #ffffff;
+    font-size: 0.8em;
+}
+
+.container-links-footer{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin: 12% 0;
+
+}
+
+.link-footer{
+    color: #ffffff;
+    font-weight: 400;
+    text-decoration: none;
+    width: 40%;
+    text-align: left;
+    margin: 0 0 4% 10% ;
+}
+
+.networks{
+    display: flex;
+    justify-content: space-between;
+    margin: 5vh 0;
+}
+
+.container-logo{
+    text-align: center;
+}
+
+.copyright{
+    font-size: 0.75em;
+    font-weight: 500;
+    text-align: center;
+    color: rgba(140, 140, 148, 1);
+    margin-top: 5vh;
+}
+
+
+
+
+
+
+
+
+
+.none{ 
+    display: none;
+}
+
+@media (min-width: 481px){
+    .none{
+        display: contents;
+    }
+    .hamburger{
+        display: none;
+    }
+}
