@@ -1,4 +1,10 @@
 
+/* RESOLUCIONES ÓPTIMAS:
+    - Desktop: 1440px (Haciendo uso de un media querie)
+    - Mobile: 480px  
+    En estas resoluciones las vistas del diseño en Figma son idénticas
+*/
+
 /* ESTILOS PARA RESOLUCIÓN ESPECIFICADA DE HASTA 480px */
 *{
     margin: 0;
@@ -28,6 +34,17 @@ header{
 
 nav{
     text-align: center;
+}
+
+.link-desktop{
+    display: none;
+    text-decoration: none;
+    font-weight: 500;
+    color: rgba(36, 46, 82, 1);
+}
+
+.link-desktop:hover{
+    color: rgba(36, 46, 82, 0.6);
 }
 
 .container-padel{
@@ -71,6 +88,13 @@ nav{
     color: #ffffff;
     font-size: 0.8em;
     margin-top: 10px;
+}
+
+.button-contact:hover,
+.button-more:hover,
+.button-go:hover{
+    background-color: rgba(139, 72, 191, 0.7);
+    cursor: pointer;
 }
 
 .container-pros{
@@ -215,6 +239,11 @@ nav{
     font-size: 0.8em;
 }
 
+.button-go-for:hover{
+    background-color: rgba(69, 69, 82, 0.7);
+    cursor: pointer;
+}
+
 footer{
     background-color: rgba(30, 30, 38, 1);
     padding: 10%;   
@@ -259,6 +288,10 @@ footer{
     margin: 0 0 4% 10% ;
 }
 
+.link-footer:hover{
+    color: rgb(117, 118, 121);
+}
+
 .networks{
     display: flex;
     justify-content: space-between;
@@ -275,17 +308,6 @@ footer{
     text-align: center;
     color: rgba(140, 140, 148, 1);
     margin-top: 5vh;
-}
-
-.link-desktop{
-    display: none;
-    text-decoration: none;
-    font-weight: 500;
-    color: rgba(36, 46, 82, 1);
-}
-
-.link-desktop:hover{
-    color: rgba(36, 46, 82, 0.6);
 }
 
 #button-desktop {
@@ -368,12 +390,6 @@ footer{
         height: 40px;
         width: 8vw;
         margin-top: 10px;
-    }
-
-    .button-contact:hover,
-    .button-more:hover{
-        background-color: rgba(139, 72, 191, 0.7);
-        cursor: pointer;
     }
 
     .container-pros{
@@ -505,6 +521,10 @@ footer{
         color: rgba(139, 72, 191, 1);
     }
 
+    .button-go-for:hover{
+        background-color: rgba(218, 218, 219, 0.7);
+    }
+
     footer{
         padding: 5vh 10vw;  
     }
@@ -520,6 +540,7 @@ footer{
         width: 25%;
         order: 2;
         margin-left: 0;
+        margin-top: 1.75vh;
     }
 
     .email{
@@ -532,7 +553,7 @@ footer{
     }
 
     .container-links-footer{
-        margin: 1.75vh 0;
+        margin: 1.75vh 0 0;
         order: 1;
         width: 60%; 
         padding-left: 5vw;
@@ -555,7 +576,7 @@ footer{
     }
 
     .networks{
-        margin: 0 0 4.2vh 1vw;
+        margin: 0 0 2vh 1vw;
         order: 1;
         width: 90%;
     }
@@ -567,5 +588,6 @@ footer{
 
     .copyright{
         text-align: right;
+        margin-top: 0;
     }
 }
