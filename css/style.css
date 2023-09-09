@@ -1,4 +1,5 @@
 
+/* ESTILOS PARA RESOLUCIÓN ESPECIFICADA DE HASTA 480px */
 *{
     margin: 0;
     padding: 0;
@@ -27,7 +28,6 @@ header{
 
 nav{
     text-align: center;
-
 }
 
 .container-padel{
@@ -301,6 +301,13 @@ footer{
 }
 
 
+/* USO DE MEDIA QUERIE APLICANDO ESTILOS A RESOLUCIONES SUPERIORES A 481px.
+
+   ESTOS ESTILOS SE IDEARON PARA CUMPLIR CON LA VISTA ESPECIFICADA EN FIGMA 
+   DE UNA PC DESKTOP CORRESPONDIENTE A 1440px.
+   PODRÍA CONSIDERARSE EL USO DE OTRO MEDIA QUERIE UTILIZANDO UNA RESOLUCIÓN 
+   INTERMEDIA, PARA DARLE UNA MEJOR VISTA A ALGUNOS ELEMENTOS QUE SE PUEDEN
+   VER AFECTADOS CON LA RESOLUCIÓN ÓPTIMA DE 1440px */
 
 @media (min-width: 481px){
     header{
@@ -362,6 +369,7 @@ footer{
         width: 8vw;
         margin-top: 10px;
     }
+
     .button-contact:hover,
     .button-more:hover{
         background-color: rgba(139, 72, 191, 0.7);
@@ -512,7 +520,6 @@ footer{
         width: 25%;
         order: 2;
         margin-left: 0;
-        /* padding-left: 10%; */
     }
 
     .email{
@@ -561,5 +568,4 @@ footer{
     .copyright{
         text-align: right;
     }
-
 }
