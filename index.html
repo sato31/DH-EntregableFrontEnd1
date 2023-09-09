@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Evaluación Final</title>
+    <title>Evaluación Final | FronEnd 1</title>
     <link rel="stylesheet" href="./css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,16 +14,16 @@
         <img class="logo-header" src="./img/logo.svg" alt="Logo">
         <nav>
             <img class="hamburger" src="./img/icon-hamburger.svg" alt="Menu">
-            <a class="none" href="./sports">Sports</a>
-            <a class="none" href="./products">Products</a>
-            <a class="none" href="./aboutus">About Us</a>
-            <a class="none" href="./trainning">Trainning</a>
-            <a class="none" href="./community">Community</a>
+            <a class="link-desktop" href="./sports">Sports</a>
+            <a class="link-desktop" href="./products">Products</a>
+            <a class="link-desktop" href="./aboutus">About Us</a>
+            <a class="link-desktop" href="./trainning">Trainning</a>
+            <a class="link-desktop" href="./community">Community</a>
         </nav>
-        <button class="none">Contact</button>
+        <button class="button-contact" id="button-desktop">Contact</button>    
     </header>
     <main>
-        <section>
+        <section class="container-main">
             <div class="container-padel">
                 <img class="padel" src="./img/padel-intro.png" alt="Padel">
             </div>
@@ -35,7 +35,8 @@
         </section>
         <section class="container-pros">
             <h2 class="pros">What´s different between pros?</h2>
-            <p class="description-pros">Manage provides all the functionality your teas needs, without the complexity. Our software is tailor-made for modern digital product teams</p>
+            <p class="description-pros" id="text-mobile">Manage provides all the functionality your teas needs, without the complexity. Our software is tailor-made for modern digital product teams</p>
+            <p class="description-pros" id="text-desktop">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas aliquet consequat purus sit amet sodales. In faucibus ut nisi eu dignissim. Vestibulum fringilla velit sed tincidunt tincidunt.</p>
         </section>
         <section>
             <div class="container-tips">
@@ -62,12 +63,22 @@
                 </div>
             </div>
         </section>
-        <section>
+        <section class="container-best">
             <h2 class="best">Best of the month</h2>
             <div class="container-cards">
+                <div class="card" id="tohide">
+                    <img class="img-player" src="./img/avatar-sanyo.png" alt="Sanyo">
+                    <h3 class="name-player">Sanyo</h3>
+                    <p class="description-player">Etiam fermentum, nulla eget gravida cursus, purus lectus feugiat mauris, ut suscipit massa ipsum eu neque. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+                </div>
                 <div class="card">
                     <img class="img-player" src="./img/avatar.lebron.png" alt="Lebron">
                     <h3 class="name-player">Lebron</h3>
+                    <p class="description-player">Etiam fermentum, nulla eget gravida cursus, purus lectus feugiat mauris, ut suscipit massa ipsum eu neque. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+                </div>
+                <div class="card" id="tohide">
+                    <img class="img-player" src="./img/avatar-navarro.png" alt="Navarro">
+                    <h3 class="name-player">Navarro</h3>
                     <p class="description-player">Etiam fermentum, nulla eget gravida cursus, purus lectus feugiat mauris, ut suscipit massa ipsum eu neque. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
                 </div>
             </div>
@@ -84,29 +95,33 @@
         </section>
     </main>
     <footer>
-        <form class="email-form" action="./registro" method="POST">
-            <input class="email" type="email" name="email" id="email" placeholder="Update in your inbox...">
-            <button class="button-go" type="submit">Go</button>
-        </form>
-        <div class="container-links-footer">
-            <a class="link-footer" href="./index.html">Home</a>
-            <a class="link-footer" href="./training">Trainning</a>
-            <a class="link-footer" href="./pricing">Pricing</a>
-            <a class="link-footer" href="./community">Community</a>
-            <a class="link-footer" href="./products">Products</a>
-            <a class="link-footer" href="./privacy">Privacy Policy</a>
-            <a class="link-footer"href="./about">About Us</a>
-        </div>
-        <div class="networks">
-            <img src="./img/icon-facebook.svg" alt="facebook">
-            <img src="./img/icon-youtube.svg" alt="youtube">
-            <img src="./img/icon-twitter.svg" alt="X">
-            <img src="./img/icon-pinterest.svg" alt="pinterest">
-            <img src="./img/icon-instagram.svg" alt="instagram">
-        </div>
-        <div class="container-logo">
-            <img class="logo-footer" src="./img/logo-footer.svg" alt="sportit">
-        </div>
+        <section class="container-end">
+            <form class="email-form" action="./registro" method="POST">
+                <input class="email" type="email" name="email" id="email" placeholder="Update in your inbox...">
+                <button class="button-go" type="submit">Go</button>
+            </form>
+            <div class="container-links-footer">
+                <a class="link-footer" href="./index.html">Home</a>
+                <a class="link-footer" href="./training">Trainning</a>
+                <a class="link-footer" href="./pricing">Pricing</a>
+                <a class="link-footer" href="./community">Community</a>
+                <a class="link-footer" href="./products">Products</a>
+                <a class="link-footer" href="./privacy">Privacy Policy</a>
+                <a class="link-footer"href="./about">About Us</a>
+            </div>
+            <div class="container-logos">
+                <div class="networks">
+                    <img src="./img/icon-facebook.svg" alt="facebook">
+                    <img src="./img/icon-youtube.svg" alt="youtube">
+                    <img src="./img/icon-twitter.svg" alt="X">
+                    <img src="./img/icon-pinterest.svg" alt="pinterest">
+                    <img src="./img/icon-instagram.svg" alt="instagram">
+                </div>
+                <div class="container-logo">
+                    <img class="logo-footer" src="./img/logo-footer.svg" alt="sportit">
+                </div>
+            </div>
+        </section>
         <p class="copyright">Copyright 2020. All Rights Reserved</p>
     </footer>
 </body>

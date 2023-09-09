@@ -25,6 +25,11 @@ header{
     width: 25px;
 }
 
+nav{
+    text-align: center;
+
+}
+
 .container-padel{
     display: flex;
     justify-content: center;
@@ -272,23 +277,289 @@ footer{
     margin-top: 5vh;
 }
 
+.link-desktop{
+    display: none;
+    text-decoration: none;
+    font-weight: 500;
+    color: rgba(36, 46, 82, 1);
+}
 
+.link-desktop:hover{
+    color: rgba(36, 46, 82, 0.6);
+}
 
-
-
-
-
-
-
-.none{ 
+#button-desktop {
     display: none;
 }
 
+#text-desktop{
+    display: none;
+}
+
+#tohide{
+    display: none;
+}
+
+
+
 @media (min-width: 481px){
-    .none{
-        display: contents;
+    header{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 80vw;
+        height: 5vh;
+        margin: 8vh 10vw;
     }
+
+    .logo-header{
+        width: 7vw;
+    }
+
     .hamburger{
         display: none;
     }
+
+    .link-desktop{
+        display: inline;
+        font-size: 1em;
+        margin: 1.3vw;
+    }
+
+    #button-desktop {
+        display: inline;
+        width: 8vw;
+        height: 90%;
+        box-shadow: 0px 4px 7px 0px rgba(0, 0, 0, 0.25);
+        margin-top: 0px;
+    }
+    
+    .container-main{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 80vw;
+        margin: 8vh 10vw;
+    }
+    
+    .container-padel{
+        width: 50%;
+    }
+    
+    .padel{
+        height: 100%;
+        width: 100%;
+    }
+
+    .main-info{
+        width: 50%;
+        margin: 0 0 0 15vw;
+    }
+
+    .button-contact,
+    .button-more{
+        height: 40px;
+        width: 8vw;
+        margin-top: 10px;
+    }
+    .button-contact:hover,
+    .button-more:hover{
+        background-color: rgba(139, 72, 191, 0.7);
+        cursor: pointer;
+    }
+
+    .container-pros{
+        display: flex;
+        flex-direction: row;
+        background-color: rgba(139, 72, 191, 1);
+        padding: 3.5vh 10vw;
+    }
+
+    .pros{
+        margin: 0 2.5vw;
+        width: 50%;
+    }
+        
+    .description-pros{
+        margin: 0 3.5vw 0 3vw;
+        width: 50%;
+    }
+
+    #text-mobile{
+        display: none;
+    }
+
+    #text-desktop{
+        display: unset;
+    }
+
+    .container-tips{
+        flex-direction: row;
+        flex-wrap: wrap;
+        background-color: rgba(250, 250, 250, 1);
+        margin: 0;
+        padding: 5vh 10vw 0 10vw;
+        justify-content: space-around;
+    }
+
+    .tip{
+        width: 50%;
+        margin-bottom: 3vh;
+    }
+
+    .header-tip{
+        display: flex;
+        flex-direction: row;
+        position:static;
+        height: 5vh;
+    }
+
+    .number-tip{
+        width: 12%;
+        height: 100%;
+        position: static;
+        padding: 1.5%;
+    }
+
+    .name-tip{
+        background-color: rgba(250, 250, 250, 1);
+        padding: 1.5%;
+        margin-left: 1vw;
+        width: 100%;
+    }
+
+    .description-tip {
+        margin: 1vh 3vw 1vh 6vw;
+        font-weight: 500;
+        color: rgba(179, 178, 183, 1);
+    }
+
+    .container-best{
+        margin: 10vh 4vw 15vh;
+    }
+
+    .best{
+        margin-bottom: 5vh;
+    }
+
+    .container-cards{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-around;
+        margin: 10vh 0 3vh 0;  
+    }
+
+    .card, 
+    #tohide{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        margin-top: 1vh;
+        width: 30vw;
+    }
+
+    .img-player{
+        position: absolute;
+        bottom: 87.5%;
+    }
+    
+    .name-player{
+        margin-top: 6vh;
+    }
+
+    .description-player{
+        margin: 2vh 1vw;
+    }
+
+    .container-button{
+        margin: 4vh 0;
+    }
+
+    .container-teams{
+        display: flex;
+        flex-direction: row;
+        justify-content:space-around;
+        align-items: center;
+        background-color:rgba(139, 72, 191, 1);
+        padding: 5vh 10vw;
+    }
+    
+    .best-teams{
+        text-align: left;
+        padding-right: 40vw;
+    }
+
+    .button-go-for{
+        background-color: rgba(255, 255, 255, 1);
+        width: 8vw;
+        box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.25);
+        color: rgba(139, 72, 191, 1);
+    }
+
+    footer{
+        padding: 5vh 10vw;  
+    }
+
+    .container-end{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    .email-form{
+        width: 25%;
+        order: 2;
+        margin-left: 0;
+        /* padding-left: 10%; */
+    }
+
+    .email{
+        width: 73%;
+        padding-left: 1vw;
+    }
+
+    .button-go{
+        width: 25%;
+    }
+
+    .container-links-footer{
+        margin: 1.75vh 0;
+        order: 1;
+        width: 60%; 
+        padding-left: 5vw;
+    }
+
+    .link-footer{
+        color: #ffffff;
+        font-weight: 400;
+        text-decoration: none;
+        width: 40%;
+        text-align: left;
+        margin: 0 2.5vw 2vh 1.5vw;
+    }
+
+    .container-logos{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 15%;
+    }
+
+    .networks{
+        margin: 0 0 4.2vh 1vw;
+        order: 1;
+        width: 90%;
+    }
+
+    .container-logo{
+        order:-1;
+        text-align: left;
+    }
+
+    .copyright{
+        text-align: right;
+    }
+
 }
